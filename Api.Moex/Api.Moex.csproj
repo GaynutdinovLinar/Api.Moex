@@ -10,6 +10,7 @@
     <RepositoryUrl>https://github.com/GaynutdinovLinar/Api.Moex</RepositoryUrl>
     <PackageTags>API; Moex; ISS; Московска биржа</PackageTags>
     <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/GaynutdinovLinar/Api.Moex</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
