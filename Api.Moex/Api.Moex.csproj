@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Title>Api.Moex</Title>
+    <Authors>GaynutdinovLinar</Authors>
+    <Description>Библиотека для удобного взаимодействия с ISS Московской биржи.</Description>
+    <Copyright>MIT</Copyright>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/GaynutdinovLinar/Api.Moex</RepositoryUrl>
+    <PackageTags>API; Moex; ISS; Московска биржа</PackageTags>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="7.0.3" />
+  </ItemGroup>
+
+</Project>
