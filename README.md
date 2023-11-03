@@ -21,7 +21,7 @@ Response-классы для csv и xml файлов в библиотеке о�
 ``` c#
 var moex = new Moex();
 var response = await moex.GetAsync<MoexResponse>(@"http://iss.moex.com/iss/index.json");
-    Console.WriteLine(response.Content);
+Console.WriteLine(response.Content);
 ```
 Получение таблицы engines из запроса в виде DataTable.
 ```c#
