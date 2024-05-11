@@ -11,6 +11,7 @@
     <PackageTags>API; Moex; ISS; Московска биржа</PackageTags>
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/GaynutdinovLinar/Api.Moex</PackageProjectUrl>
+    <Version>2.0.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

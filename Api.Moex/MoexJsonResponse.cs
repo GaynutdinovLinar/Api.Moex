@@ -120,6 +120,11 @@ namespace Api.Moex
         public ArrayEnumerator DataArray { get; }
 
         /// <summary>
+        /// Данные
+        /// </summary>
+        public IEnumerable<JsonRow> Rows => DataArray.Select(x => new JsonRow(this, x.EnumerateArray().ToArray()));
+
+        /// <summary>
         /// Преобразовать данные в T
         /// </summary>
         /// <typeparam name="T"></typeparam>
@@ -129,10 +134,9 @@ namespace Api.Moex
         {
             var result = new List<T>();
 
-            foreach (var dataRow in DataArray)
+            foreach (var row in Rows)
             {
-                var jsonRow = new JsonRow(this, dataRow.EnumerateArray().ToArray());
-                result.Add(converter(jsonRow));
+                result.Add(converter(row));
             }
 
             return result;
